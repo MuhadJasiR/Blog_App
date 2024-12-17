@@ -1,0 +1,10 @@
+part of 'app_user_cubit.dart';
+
+sealed class AppUserState {}
+
+final class AppUserCubitInitial extends AppUserState {}
+
+final class AppUserLoggedIn extends AppUserState {
+  final User user;
+  AppUserLoggedIn(this.user);
+}
