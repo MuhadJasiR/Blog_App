@@ -30,7 +30,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-lib/core/secrets/app_secrets.dart
+/app_secrets.dart
 
 # Symbolication related
 app.*.symbols
