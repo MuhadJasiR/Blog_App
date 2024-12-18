@@ -70,8 +70,6 @@ class AuthRepositoryImp implements AuthRepository {
       );
 
       return right(user);
-    } on sb.AuthException catch (e) {
-      return left(Failure(e.message));
     } on ServerException catch (e) {
       return left(Failure(e.message));
     }
